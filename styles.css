@@ -143,7 +143,7 @@ p{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -281,6 +281,8 @@ p{
 .flip-card-front {
   background-color: blueviolet;
   color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Style the back side */
@@ -319,7 +321,7 @@ color: blue;
 	 display: flex;
 	 flex-wrap: wrap;
 	 box-sizing: border-box;
-	 justify-content: center;
+	 justify-content: space-between;
  }
 
 .footer-items {
@@ -747,11 +749,51 @@ li i {
   }
 }
 
+.mob_footer{
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Responsive for mobile */
 
-@media screen and (max-width:1000px) { body {
+@media screen and (max-width:1000px) { 
+  
+  body {
 padding: 0px;
 font-size: x-small;
 }
-  
+  .mob_card{
+    display: none;
+  }
+  .container{
+    width: auto;
+  }
+
+  .mob_flip{
+    display: none;
+  }
+
+  .mob_footer{
+    display: flex;
+  }
+
+  .mob_footer_item_0{
+   display: none;
+  }
+
+  .mob_footer_item_1{
+    margin-right: 20px;
+  }
+
+  .mob_footer_item_2{
+    margin-left: 20px;
+  }
+
+  .social-media{
+    display: none;
+  }
+
+  iframe{
+    height: 200px;
+  }
 }
