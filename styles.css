@@ -746,3 +746,12 @@ li i {
     width: 100%;
   }
 }
+
+/* Responsive for mobile */
+
+@media screen and (max-width:1000px) { body {
+padding: 0px;
+font-size: x-small;
+}
+  
+}
