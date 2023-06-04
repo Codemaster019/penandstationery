@@ -797,4 +797,8 @@ font-size: x-small;
   iframe{
     height: 200px;
   }
+  .inner-footer{
+	  margin-left:0px;
+	  margin-right:0px;
+	}
 }
