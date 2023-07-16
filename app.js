@@ -26,3 +26,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// Footer copyright year
+const d = new Date();
+document.getElementById("footer-bottom-date").innerHTML = d.getFullYear();
